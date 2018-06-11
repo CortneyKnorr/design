@@ -44,17 +44,4 @@ Example
 let newUser = userEMS.clone(userEMS.skeleton);
 ```
 
-### .cast(object: Any) -> Entity
-Casts an object into the entity stripping it of its undesired fields and adding the fields with the default values.
-
-> .cast(object: Any) -> Entity
-
-Example
-```
-let user = userEMS.cast({
-    username: "Jack",
-    age: 145
-});
-// user -> {username: "Jack", password: undefined, authType: 'local'} 
-```
 
